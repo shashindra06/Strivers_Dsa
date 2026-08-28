@@ -1,6 +1,6 @@
 package Arrays.easy;
 
-class movezeroes {
+class Movezeroes {
     public void moveZeroes(int[] nums) {
         int j = 0;
         int i = 0;
