@@ -1,4 +1,4 @@
-package Binary_Search;
+package Binary_Search.easy;
 
 //Input: arr = [4,5,6,7,0,1,2,3]
 //Output: 0
