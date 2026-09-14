@@ -5,7 +5,7 @@ package Binary_Search.easy;
 //Output: 5
 //Explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
 
-class Solution {
+class Peak_bs {
     public int findPeakElement(int[] nums) {
         int start = 0, end = nums.length - 1;
         while (start < end) {
