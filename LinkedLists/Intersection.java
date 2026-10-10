@@ -1,16 +1,8 @@
 package LinkedLists;
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- * int val;
- * ListNode next;
- * ListNode(int x) {
- * val = x;
- * next = null;
- * }
- * }
- */
+// Given the heads of two singly linked-lists headA and headB, return the node
+// at which the two lists intersect. If the two linked lists have no
+// intersection at all, return null.
 
 // O(m × n)
 public class Intersection {
@@ -42,5 +34,41 @@ public class Intersection {
 // }
 
 // return a;
+// }
+// }
+
+// class Solution {
+
+// // Find the first common node using a hash set.
+// public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+
+// // Store references of all nodes from the first list,
+// // allowing constant average-time reference checks.
+// HashSet<ListNode> visited = new HashSet<>();
+
+// // Traverse the first linked list and store each node reference.
+// ListNode first = headA;
+
+// while (first != null) {
+// visited.add(first);
+// first = first.next;
+// }
+
+// // Traverse the second list and check whether each node
+// // reference is already present in the first list.
+// ListNode second = headB;
+
+// while (second != null) {
+
+// // The first node found in the set is the intersection node.
+// if (visited.contains(second)) {
+// return second;
+// }
+
+// second = second.next;
+// }
+
+// // No common node exists between the two lists.
+// return null;
 // }
 // }
